@@ -1,6 +1,6 @@
-creds.json
-myconfig.json
-app.conf
+# creds.json
+# myconfig.json
+# app.conf
 
 # Dependency directories (remove the comment below to include it)
 vendor/
