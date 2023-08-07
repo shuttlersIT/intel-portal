@@ -19,6 +19,8 @@ import (
 	"golang.org/x/oauth2/google"
 )
 
+var c string
+
 var cred Credentials
 var conf *oauth2.Config
 
@@ -42,7 +44,8 @@ func getLoginURL(state string) string {
 }
 
 func init() {
-	file, err := ioutil.ReadFile("./creds/creds.json")
+	c = "github.com/shuttlersIT/intel-portal/src/creds/creds.json"
+	file, err := ioutil.ReadFile(c)
 	if err != nil {
 		log.Printf("File error: %v\n", err)
 		os.Exit(1)
